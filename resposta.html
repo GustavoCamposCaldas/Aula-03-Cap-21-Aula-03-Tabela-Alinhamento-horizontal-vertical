@@ -3,12 +3,68 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gabarito - Alinhamento em Tabelas</title>
-   
+    <title>Exercício - Alinhamento em Tabelas</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table {
+            width: 500px; /* Aumentei um pouco para caber o texto confortavelmente */
+            height: 400px;
+            border-collapse: collapse;
+        }
+
+        td {
+            border: 1px solid black;
+            padding: 10px;
+            /* O padrão da maioria das células no gabarito parece ser centralizado */
+            text-align: center;      
+            vertical-align: middle;  
+        }
+
+        /* TAREFA 1: ALINHAMENTO HORIZONTAL */
+        .direita {
+            text-align: right;
+        }
+
+        .esquerda {
+            text-align: left;
+        }
+
+        /* TAREFA 2: ALINHAMENTO VERTICAL */
+        .topo {
+            vertical-align: top;
+        }
+
+        .baixo {
+            vertical-align: bottom;
+        }
+
+    </style>
 </head>
 <body>
     <h1>Gabarito - Trabalhando com alinhamento</h1>
     
-  
+    <table>
+        <tr> 
+            <td class="esquerda topo">A1<br>(esquerda)</td>
+            <td>B1<br>(padrão centro)</td>
+            <td class="direita topo">C1<br>(direita)</td>
+        </tr>
+        <tr> <td class="topo esquerda">A2<br>(topo)</td>
+            <td>B2<br>(padrão)</td>
+            <td class="baixo esquerda">C2<br>(baixo)</td>
+        </tr>
+        <tr> <td class="topo esquerda">A3<br>(topo)</td>
+            <td class="baixo esquerda">B3<br>(baixo)</td>
+            <td>C3<br>(padrão)</td>
+        </tr>
+        <tr> <td>A4</td>
+            <td class="direita baixo">1000<br>(número à direita)</td>
+            <td>C4</td>
+        </tr>
+    </table>
+    
 </body>
 </html>
